@@ -1,5 +1,5 @@
 import axios from "axios";
-let a = "http://".concat(document.location.hostname)
+let a = document.location.hostname
 const AUTH_API_BASE_URL = a.concat(":4000").concat("/api/")
 
 export const register = (username, password, color) => {
