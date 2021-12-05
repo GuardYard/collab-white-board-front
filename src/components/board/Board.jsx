@@ -7,7 +7,7 @@ class Board extends React.Component {
 
     timeout;
 
-    socket = io.connect("ec2-52-215-69-187.eu-west-1.compute.amazonaws.com:4000"));
+    socket = io.connect("ec2-34-243-112-200.eu-west-1.compute.amazonaws.com:4000");
 
     ctx;
     isDrawing = false;
