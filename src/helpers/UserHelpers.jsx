@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const USER_API_BASE_URL = "http://localhost:4000/api/users/"
+let a = document.location.toString().split(':')
+const USER_API_BASE_URL = a[0].concat(":4000").concat("/api/users/")
 
 export const getAllUsers = () => {
     return axios.get(USER_API_BASE_URL);
@@ -25,5 +26,6 @@ export const updateUser = (user) => {
 export const deleteUserById = (userId) => {
     return axios.delete(USER_API_BASE_URL + userId)
 }
+
 
 
