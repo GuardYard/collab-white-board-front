@@ -6,8 +6,8 @@ import './style.css';
 class Board extends React.Component {
 
     timeout;
-    link = document.location.toString().split(':')
-    socket = io.connect(this.link[0].concat(":4000"));
+
+    socket = io.connect("http://".concat(document.location.hostname).concat(":4000"));
 
     ctx;
     isDrawing = false;
