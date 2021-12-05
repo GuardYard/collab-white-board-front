@@ -7,7 +7,7 @@ class Board extends React.Component {
 
     timeout;
 
-    socket = io.connect("http://".concat(document.location.hostname).concat(":4000"));
+    socket = io.connect(document.location.hostname.concat(":4000"));
 
     ctx;
     isDrawing = false;
